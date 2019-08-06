@@ -41,5 +41,5 @@ writer=ExcelWriter('Dataset Tugas 3 AI 1718.xlsx')
 book = load_workbook('Dataset Tugas 3 AI 1718.xlsx')
 writer.book = book 
 writer.sheets = dict((ws.title, ws) for ws in book.worksheets)
-hasil.to_excel(writer, sheet_name='DataTest',index=False, startcol=6)
+hasil.to_excel(writer, sheet_name='DataTest',index=False, startcol=5)
 writer.save()
